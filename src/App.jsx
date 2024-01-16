@@ -2,14 +2,8 @@ import { useState } from "react";
 
 export const App = () => {
   const [todoText, setTodoText] = useState("");
-  const [incomplete, setIncomplete] = useState([
-    "TODOです1",
-    "TODOです2"
-  ]);
-  const [complete, setComplete] = useState([
-    "TODOでした1",
-    "TODOでした2"
-  ]);
+  const [incomplete, setIncomplete] = useState([]);
+  const [complete, setComplete] = useState([]);
 
   const onChangeTodoText = (event) => setTodoText(event.target.value);
 
